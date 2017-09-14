@@ -30,3 +30,25 @@ compile 'com.google.firebase:firebase-config:11.2.2'
 </defaultsMap>
 ```
 into ```res/xml/remote_config_defaults.xml``` to create default value for this configuration.
+
+5. Create RemoteConfig Singleton object using
+```Java
+mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
+```
+
+6. Set RemoteConfig settings
+```Java
+FirebaseRemoteConfigSettings configSettings = new FirebaseRemoteConfigSettings.Builder()
+                .setDeveloperModeEnabled(BuildConfig.DEBUG)
+                .build();
+mFirebaseRemoteConfig.setConfigSettings(configSettings);
+```
+
+7. Set default values
+```Java
+mFirebaseRemoteConfig.setDefaults(R.xml.remote_config_defaults);
+```
+
+8. Create parameter in [Firebase Console](https://console.firebase.google.com/u/0/)
+
+9. Get parameter values from the Remote Config object. (https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String))
