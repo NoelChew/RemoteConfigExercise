@@ -52,3 +52,7 @@ mFirebaseRemoteConfig.setDefaults(R.xml.remote_config_defaults);
 8. Create parameter in [Firebase Console](https://console.firebase.google.com/u/0/)
 
 9. Get parameter values from the Remote Config object. (https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String))
+
+10. Update UI
+
+For more guidance, please refer to this [quick start](https://firebase.google.com/docs/remote-config/android)
