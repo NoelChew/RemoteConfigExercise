@@ -54,7 +54,7 @@ Then, click on "Add value for condition" and key in these conditions:
 Publish changes.
 
 7. Get parameter values from the Remote Config object. 
-Refer [getBoolean documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String)) and [guide](https://firebase.google.com/docs/remote-config/android).
+Refer to [getBoolean documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String)), this [guide](https://firebase.google.com/docs/remote-config/android) and this [example](https://github.com/firebase/quickstart-android/blob/master/config/app/src/main/java/com/google/samples/quickstart/config/MainActivity.java#L96-L126).
 
 8. Update UI after fetching value from Remote Config.
 
