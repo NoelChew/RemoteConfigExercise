@@ -74,7 +74,7 @@ Without this, events logged will be batched together over the period of approxim
 
 For more information (and how to disable this), please refer to this [link](https://firebase.google.com/docs/analytics/debugview).
 
-3. Send "clicked_add_to_cart" event with a custom boolean parameter called "usingFAB" to Firebase Analytics.
+3. Locate ```TODO: Part 2``` and try to call ```logEvent(FirebaseAnalytics.Event.ADD_TO_CART, bundle)``` with a custom boolean parameter called "usingFAB" to Firebase Analytics.
 
 Refer to this [guide](https://firebase.google.com/docs/analytics/android/events).
 
