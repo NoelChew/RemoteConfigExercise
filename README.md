@@ -19,7 +19,9 @@ compile 'com.google.firebase:firebase-core:11.2.2'
 compile 'com.google.firebase:firebase-config:11.2.2'
 ```
 
-4. Add
+4. Create default values for Remote Config locally.
+
+Add
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <defaultsMap>
@@ -29,7 +31,7 @@ compile 'com.google.firebase:firebase-config:11.2.2'
     </entry>
 </defaultsMap>
 ```
-into ```res/xml/remote_config_defaults.xml``` to create default value for this configuration.
+into ```res/xml/remote_config_defaults.xml```.
 
 5. Create RemoteConfig Singleton object using
 ```Java
