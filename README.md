@@ -33,7 +33,11 @@ Add
 ```
 into ```res/xml/remote_config_defaults.xml```.
 
-5. Initialise Remote Config. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
+5. Take a look at ```MainActivity.java``` and ```activity_main.xml```. Some codes are missing in areas labelled with TODO.
+
+Start with TODO: Part 1
+
+Initialise Remote Config. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
 - create Remote Config Singleton object
 - set Remote Config settings
 - set default values
@@ -50,7 +54,7 @@ Then, click on "Add value for condition" and key in these conditions:
 Publish changes.
 
 7. Get parameter values from the Remote Config object. 
-Refer [here](https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String)).
+Refer to [getBoolean documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String)), this [guide](https://firebase.google.com/docs/remote-config/android) and this [example](https://github.com/firebase/quickstart-android/blob/master/config/app/src/main/java/com/google/samples/quickstart/config/MainActivity.java#L96-L126).
 
 8. Update UI after fetching value from Remote Config.
 
@@ -70,7 +74,7 @@ Without this, events logged will be batched together over the period of approxim
 
 For more information (and how to disable this), please refer to this [link](https://firebase.google.com/docs/analytics/debugview).
 
-3. Send "clicked_add_to_cart" event with a custom boolean parameter called "usingFAB" to Firebase Analytics.
+3. Locate ```TODO: Part 2``` and try to call ```logEvent(FirebaseAnalytics.Event.ADD_TO_CART, bundle)``` with a custom boolean parameter called "usingFAB" to Firebase Analytics.
 
 Refer to this [guide](https://firebase.google.com/docs/analytics/android/events).
 
