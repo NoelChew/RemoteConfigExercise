@@ -155,9 +155,9 @@ public class MainActivity extends AppCompatActivity {
         // [END shared_app_measurement]
 
         // [START custom_event]
-        Bundle params = new Bundle();
-        params.putBoolean("usingFAB", usingFAB);
-        mFirebaseAnalytics.logEvent("clicked_add_to_cart", params);
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("usingFAB", usingFAB);
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART, bundle);
         // [END custom_event]
     }
 
