@@ -10,12 +10,18 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Context context;
+    private static final String TAG = "MainActivity";
 
-    FloatingActionButton fabAddToCart;
-    Button btnAddToCart;
+    private Context context;
+
+    private FloatingActionButton fabAddToCart;
+    private Button btnAddToCart;
 
     boolean useFAB;
+
+//    private FirebaseRemoteConfig mFirebaseRemoteConfig; // uncomment this after adding Firebase SDK dependency
+//    private FirebaseAnalytics mFirebaseAnalytics; // uncomment this after adding Firebase SDK dependency
+    private static final String USER_FAB_KEY = "useFAB";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +39,17 @@ public class MainActivity extends AppCompatActivity {
         fabAddToCart.setOnClickListener(addToCartOnClickListener);
         btnAddToCart.setOnClickListener(addToCartOnClickListener);
 
-        useFAB = getUseFABRemoteConfigParamValue();
+        getUseFABRemoteConfigParamValue();
+    }
 
+    private void getUseFABRemoteConfigParamValue() {
+        // TODO: Part 1 - get Remote Config param value
+//        mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
+//        ...
+
+    }
+
+    private void displayAddToCartUI() {
         if (useFAB) {
             btnAddToCart.setVisibility(View.GONE);
             fabAddToCart.setVisibility(View.VISIBLE);
@@ -42,13 +57,12 @@ public class MainActivity extends AppCompatActivity {
             btnAddToCart.setVisibility(View.VISIBLE);
             fabAddToCart.setVisibility(View.GONE);
         }
-    }
 
-    private boolean getUseFABRemoteConfigParamValue() {
-        boolean useFAB = false;
-        // TODO: get RemoteConfig param
-
-        return useFAB;
+// TODO: uncomment these codes for Part 2
+//        if (mFirebaseAnalytics == null) {
+//            mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+//        }
+//        mFirebaseAnalytics.setUserProperty("usingFAB", String.valueOf(useFAB));
     }
 
     private View.OnClickListener addToCartOnClickListener = new View.OnClickListener() {
@@ -73,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void reportAddToCartEventToFirebaseAnalytics(boolean usingFAB) {
-        // TODO: create User Property and send Event
+        // TODO: Part 2 - send event to Firebase Analytics
 
     }
 
