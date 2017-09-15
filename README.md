@@ -33,9 +33,9 @@ Add
 ```
 into ```res/xml/remote_config_defaults.xml```.
 
-5. Take a look at ```MainActivity.java``` and ```activity_main.xml```. Some codes are missing in areas labelled with //TODO.
+5. Take a look at ```MainActivity.java``` and ```activity_main.xml```. Some codes are missing in areas labelled with TODO.
 
-Start with //TODO: Part 1
+Start with TODO: Part 1
 
 Initialise Remote Config. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
 - create Remote Config Singleton object
@@ -54,7 +54,7 @@ Then, click on "Add value for condition" and key in these conditions:
 Publish changes.
 
 7. Get parameter values from the Remote Config object. 
-Refer [here](https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String)).
+Refer [getBoolean documentation](https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String)) and [guide](https://firebase.google.com/docs/remote-config/android).
 
 8. Update UI after fetching value from Remote Config.
 
