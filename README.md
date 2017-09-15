@@ -33,7 +33,8 @@ Add
 ```
 into ```res/xml/remote_config_defaults.xml```.
 
-5. Initialise Remote Config. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
+5. Take a look at ```MainActivity.java``` and ```activity_main.xml```. Some codes are missing in areas labelled with //TODO.
+Initialise Remote Config. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
 - create Remote Config Singleton object
 - set Remote Config settings
 - set default values
