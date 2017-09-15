@@ -7,6 +7,10 @@ This exercise will attempt to conduct A/B test on an "Add To Cart" UI component 
 
 using Firebase Remote Config and Firebase Analytics.
 
+![alt text](/image/useFAB_true.png "with FAB")
+![alt text](/image/useFAB_false.png "with Button")
+
+
 ## Part 1: Implementing Firebase Remote Config
 1. [Download the source code](https://github.com/NoelChew/RemoteConfigExercise/archive/master.zip) from this repo.
 
@@ -35,7 +39,7 @@ into ```res/xml/remote_config_defaults.xml```.
 
 5. Take a look at ```MainActivity.java``` and ```activity_main.xml```. Some codes are missing in areas labelled with TODO.
 
-Start with TODO: Part 1
+Start with ```TODO: Part 1```
 
 Initialise Remote Config. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
 - create Remote Config Singleton object
@@ -50,6 +54,8 @@ Then, click on "Add value for condition" and key in these conditions:
 
 - "Use FAB for Add To Cart", with condition: User with random percentile <= 50%
 - "Use Button for Add To Cart", with condition: User with random percentile > 50% AND User with random percentile <= 100%
+
+![alt text](/image/setting_remote_config_conditions.png "Setting Remote Config Conditions")
 
 Publish changes.
 
