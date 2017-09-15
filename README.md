@@ -8,7 +8,7 @@ This exercise will attempt to conduct A/B test on an "Add To Cart" UI component 
 using Firebase Remote Config and Firebase Analytics.
 
 ## Part 1: Implementing Firebase Remote Config
-1. Download the source code from this repo.
+1. [Download the source code](https://github.com/NoelChew/RemoteConfigExercise/archive/master.zip) from this repo.
 
 2. Install [Firebase SDK](https://firebase.google.com/docs/android/setup).
 
