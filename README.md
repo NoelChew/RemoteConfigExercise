@@ -63,7 +63,7 @@ For more guidance, please refer to this [quick start](https://firebase.google.co
 
 2. Enable debug mode for Firebase Analytics by sending this command to device
 ```
-adb shell setprop debug.firebase.analytics.app com.noelchew.remoteconfigsample"
+adb shell setprop debug.firebase.analytics.app com.noelchew.remoteconfigsample
 ```
 
 Without this, events logged will be batched together over the period of approximately one hour and uploaded together.
