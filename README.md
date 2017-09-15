@@ -80,4 +80,13 @@ Refer to this [guide](https://firebase.google.com/docs/analytics/android/events)
 
 Refer to this [guide]() to learn more about setting user property.
 
+6. Run the app and check the events in DebugView (toggle StreamView if you can't find it).
+
+7. To check the user behaviour for different UI, check the Events tab and add filter to show "usingFAB" User Property.
+
+However, data will only be available after 24 hours.
+
+
+## Done!
+That's it! You have successfully implemented Firebase Remote Config and Firebase Analytics for a simple A/B testing. Note that in this exercise, there's not much sample data for you to tinker with in the Firebase Analytics console. You probably only have 1 sample size to play with. You can install the app into more devices if you wish to see more data.
 
