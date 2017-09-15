@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     boolean useFAB;
 
-//    private FirebaseRemoteConfig mFirebaseRemoteConfig; // uncomment this after adding Firebase SDK dependency
-//    private FirebaseAnalytics mFirebaseAnalytics; // uncomment this after adding Firebase SDK dependency
+//    private FirebaseRemoteConfig mFirebaseRemoteConfig; // TODO: Part 1 - uncomment this after adding Firebase SDK dependency
+//    private FirebaseAnalytics mFirebaseAnalytics; // TODO: Part 2 - uncomment this after adding Firebase SDK dependency
     private static final String USER_FAB_KEY = "useFAB";
 
     @Override
@@ -44,9 +44,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void getUseFABRemoteConfigParamValue() {
         // TODO: Part 1 - get Remote Config param value
+        // create Remote Config Singleton object
 //        mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
 //        ...
 
+        // set Remote Config settings
+
+        // set default values
+
+        // fetch param values
     }
 
     private void displayAddToCartUI() {
@@ -58,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             fabAddToCart.setVisibility(View.GONE);
         }
 
-// TODO: uncomment these codes for Part 2
+// TODO: Part 2 - uncomment these codes
 //        if (mFirebaseAnalytics == null) {
 //            mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 //        }
