@@ -7,8 +7,8 @@ This exercise will attempt to conduct A/B test on an "Add To Cart" UI component 
 
 using Firebase Remote Config and Firebase Analytics.
 
-## Steps
-1. Download the source code from this repo.
+## Part 1: Implementing Firebase Remote Config
+###1. Download the source code from this repo.
 
 2. Install [Firebase SDK](https://firebase.google.com/docs/android/setup).
 
@@ -33,9 +33,9 @@ Add
 ```
 into ```res/xml/remote_config_defaults.xml```.
 
-5. Initialise RemoteConfig. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
-- create RemoteConfig Singleton object
-- set RemoteConfig settings
+5. Initialise Remote Config. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
+- create Remote Config Singleton object
+- set Remote Config settings
 - set default values
 
 6. Create parameter in [Firebase Console](https://console.firebase.google.com/u/0/).
@@ -51,8 +51,13 @@ Publish changes.
 
 7. Get parameter values from the Remote Config object. (https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String))
 
-8. Update UI
+8. Update UI after fetching value from Remote Config.
 
 For more guidance, please refer to this [quick start](https://firebase.google.com/docs/remote-config/android).
 
-9. 
+
+## Part 2: Tracking User Behaviour via Firebase Analytics
+
+1. Create user property in Firebase Analytics.
+
+
