@@ -33,28 +33,26 @@ Add
 ```
 into ```res/xml/remote_config_defaults.xml```.
 
-5. Create RemoteConfig Singleton object using
-```Java
-mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
-```
+5. Initialise RemoteConfig. Please refer to [guide](https://firebase.google.com/docs/remote-config/android).
+- create RemoteConfig Singleton object
+- set RemoteConfig settings
+- set default values
 
-6. Set RemoteConfig settings
-```Java
-FirebaseRemoteConfigSettings configSettings = new FirebaseRemoteConfigSettings.Builder()
-                .setDeveloperModeEnabled(BuildConfig.DEBUG)
-                .build();
-mFirebaseRemoteConfig.setConfigSettings(configSettings);
-```
+6. Create parameter in [Firebase Console](https://console.firebase.google.com/u/0/).
 
-7. Set default values
-```Java
-mFirebaseRemoteConfig.setDefaults(R.xml.remote_config_defaults);
-```
+Set the parameter key as "useFAB" with default value of true.
 
-8. Create parameter in [Firebase Console](https://console.firebase.google.com/u/0/)
+Then, click on "Add value for condition" and key in these conditions:
 
-9. Get parameter values from the Remote Config object. (https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String))
+- "Use FAB for Add To Cart", with condition: User with random percentile <= 50%
+- "Use Button for Add To Cart", with condition: User with random percentile > 50% AND User with random percentile <= 100%
 
-10. Update UI
+Publish changes.
 
-For more guidance, please refer to this [quick start](https://firebase.google.com/docs/remote-config/android)
+7. Get parameter values from the Remote Config object. (https://firebase.google.com/docs/reference/android/com/google/firebase/remoteconfig/FirebaseRemoteConfig#getBoolean(java.lang.String))
+
+8. Update UI
+
+For more guidance, please refer to this [quick start](https://firebase.google.com/docs/remote-config/android).
+
+9. 
