@@ -61,13 +61,22 @@ For more guidance, please refer to this [quick start](https://firebase.google.co
 
 1. Add [Firebase Analytics](https://firebase.google.com/docs/analytics/android/start/) dependency to the app.
 
-2. Send "clicked_add_to_cart" event with a custom boolean parameter called "usingFAB" to Firebase Analytics.
+2. Enable debug mode for Firebase Analytics by sending this command to device
+```
+adb shell setprop debug.firebase.analytics.app com.noelchew.remoteconfigsample"
+```
+
+Without this, events logged will be batched together over the period of approximately one hour and uploaded together.
+
+For more information (and how to disable this), please refer to this [link](https://firebase.google.com/docs/analytics/debugview).
+
+3. Send "clicked_add_to_cart" event with a custom boolean parameter called "usingFAB" to Firebase Analytics.
 
 Refer to this [guide](https://firebase.google.com/docs/analytics/android/events).
 
-3. Create user property called "usingFAB" in Firebase Analytics.
+4. Create user property called "usingFAB" in Firebase Analytics.
 
-4. Uncomment setting of user property inside displayAddToCartUI() function.
+5. Uncomment setting of user property inside displayAddToCartUI() function.
 
 Refer to this [guide]() to learn more about setting user property.
 
