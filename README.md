@@ -96,6 +96,9 @@ Refer to this [guide]() to learn more about setting user property.
 
 However, data will only be available after 24 hours.
 
+![alt text](/image/user_properties_filter.png "User Properties Filter")
+
+![alt text](/image/filter_useFAB_true.png "usingFAB = true")
 
 ## Done!
 That's it! You have successfully implemented Firebase Remote Config and Firebase Analytics for a simple A/B testing. Note that in this exercise, there's not much sample data for you to tinker with in the Firebase Analytics console. You probably only have 1 sample size to play with. You can install the app into more devices if you wish to see more data (24 hours later).
